@@ -44,6 +44,7 @@ Route::group(['middleware'=>['auth','admin']], function (){
 	Route::get('admin/projects','AdminController@projects')->name('admin.projects');
 	Route::get('admin/basic','AdminController@basic')->name('admin.basic');
 	Route::get('admin/overview','AdminController@overview')->name('admin.overview');
+
 	Route::get('admin/details','AdminController@details')->name('admin.details');
 	Route::get('admin/faq/','AdminController@faq')->name('admin.faq');
 	Route::get('admin/faqtable/{id}','AdminController@faqtable')->name('admin.faqtable');

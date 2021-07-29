@@ -175,11 +175,6 @@ function myfaqsav(){
     addfaq(id,que,ans);
 }
 
-// faq Modal Save Btn
-// $('#faqsavebtn').click(function() {
-  
-// })
-
 
 // Service Add Method
 
@@ -209,26 +204,18 @@ function addfaq(faqprojectid,faqqus,faqans) {
 
               if (response.data == 1) {
                 $('#addnewFaqmodel').modal('hide');
-                
-                // toastr.success('Add Success');
-                // getServicesData();
             } else {
                 $('#addnewFaqmodel').modal('hide');
-                // toastr.error('Add Fail');
-                // getServicesData();
             }  
          } 
          else{
              $('#addnewFaqmodel').modal('hide');
-            //  toastr.error('Something Went Wrong !');
          }   
 
     })
     .catch(function(error) {
         console.log(error)
-
              $('#addnewFaqmodel').modal('hide');
-             toastr.error('Something Went Wrong !');
    });
 
 }

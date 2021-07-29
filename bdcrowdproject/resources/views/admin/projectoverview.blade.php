@@ -30,8 +30,12 @@
                                         <div class="col-12">
                                             <div class="form-group ">
                                                 <label>project Overview:</label>
-                                                <textarea class="summernote">
-                                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, magni maiores totam cupiditate aperiam sequi quibusdam explicabo possimus minima ad accusantium, facilis, culpa eligendi tempore! Ipsa magnam consequatur magni cumque!
+
+                                                <tbody id="service_table">
+
+                                                    </tbody>
+                                                <textarea  class="summernote">
+                                                   
                                                 </textarea>
                                             </div>
                                         </div>
@@ -98,5 +102,11 @@
                 </div>
             </div>
         </div>
+
+@endsection
+
+
+
+@section('script')
 
 @endsection

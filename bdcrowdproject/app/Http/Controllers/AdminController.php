@@ -23,6 +23,9 @@ class AdminController extends Controller
     public function basic(){
         return view('admin.projectbasic');
     }
+
+    
+    // -----------------overview--------------
     public function overview(){
         
         $overview_data = DB::table('projects')->get();
